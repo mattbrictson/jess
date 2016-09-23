@@ -1,0 +1,252 @@
+{
+  "mobile_device": {
+    "general": {
+      "id": 656,
+      "display_name": "Demo iPhone 6",
+      "device_name": "Demo iPhone 6",
+      "name": "Demo iPhone 6",
+      "asset_tag": "",
+      "last_inventory_update": "Monday, September 26 2016 at 11:07 AM",
+      "last_inventory_update_epoch": 1474906050947,
+      "last_inventory_update_utc": "2016-09-26T11:07:30.947-0500",
+      "capacity": 116166,
+      "capacity_mb": 116166,
+      "available": 76468,
+      "available_mb": 76468,
+      "percentage_used": 34,
+      "os_type": "iOS",
+      "os_version": "10.0.1",
+      "os_build": "14A403",
+      "serial_number": "G19XF522L161",
+      "udid": "8e4b386215c7fdcfec1e4ab3212f392df471351e",
+      "initial_entry_date_epoch": 1444148059055,
+      "initial_entry_date_utc": "2015-10-06T11:14:19.055-0500",
+      "phone_number": "+11235551234",
+      "ip_address": "10.0.0.5",
+      "wifi_mac_address": "1C:0E:18:29:10:78",
+      "bluetooth_mac_address": "41:49:D6:AA:A4:88",
+      "modem_firmware": "5.24.00",
+      "model": "iPhone 6",
+      "model_identifier": "iPhone7,2",
+      "model_number": "NG4V2LL",
+      "modelDisplay": "iPhone 6",
+      "model_display": "iPhone 6",
+      "device_ownership_level": "Institutional",
+      "last_enrollment_epoch": 1444148069975,
+      "last_enrollment_utc": "2015-10-06T11:14:29.975-0500",
+      "managed": true,
+      "supervised": false,
+      "shared": "No",
+      "tethered": "",
+      "battery_level": 87,
+      "airplay_password": "",
+      "device_id": "",
+      "locales": "",
+      "device_locator_service_enabled": true,
+      "do_not_disturb_enabled": false,
+      "cloud_backup_enabled": true,
+      "last_cloud_backup_date_epoch": 1474806627000,
+      "last_cloud_backup_date_utc": "2016-09-25T07:30:27.000-0500",
+      "location_services_enabled": false,
+      "itunes_store_account_is_active": true,
+      "computer": {
+        "id": -1
+      },
+      "last_backup_time_epoch": 0,
+      "last_backup_time_utc": "",
+      "site": {
+        "id": 1,
+        "name": "Demo Company"
+      }
+    },
+    "location": {
+      "username": "matt",
+      "real_name": "Matt",
+      "email_address": "hello@example.com",
+      "position": "Manager",
+      "phone": "555-1234",
+      "department": "Demo Department",
+      "building": "Demo Building",
+      "room": "Demo Room"
+    },
+    "purchasing": {
+      "is_purchased": true,
+      "is_leased": false,
+      "po_number": "",
+      "vendor": "Expired",
+      "applecare_id": "",
+      "purchase_price": "",
+      "purchasing_account": "",
+      "po_date": "2014-09-19",
+      "po_date_epoch": 1411102800000,
+      "po_date_utc": "2014-09-19T00:00:00.000-0500",
+      "warranty_expires": "",
+      "warranty_expires_epoch": 0,
+      "warranty_expires_utc": "",
+      "lease_expires": "",
+      "lease_expires_epoch": 0,
+      "lease_expires_utc": "",
+      "life_expectancy": 0,
+      "purchasing_contact": "",
+      "attachments": [
+
+      ]
+    },
+    "applications": [
+      {
+        "application_name": "Amazon",
+        "application_version": "18225.0",
+        "identifier": "com.amazon.Amazon"
+      },
+      {
+        "application_name": "Facebook",
+        "application_version": "38842789",
+        "identifier": "com.facebook.Facebook"
+      },
+      {
+        "application_name": "Google Maps",
+        "application_version": "4.22.90471",
+        "identifier": "com.google.Maps"
+      },
+      {
+        "application_name": "Grubhub",
+        "application_version": "3.13",
+        "identifier": "com.grubhub.search"
+      },
+      {
+        "application_name": "Instacart",
+        "application_version": "5052",
+        "identifier": "com.instacart"
+      },
+      {
+        "application_name": "Instagram",
+        "application_version": "38579444",
+        "identifier": "com.burbn.instagram"
+      },
+      {
+        "application_name": "iPhoto",
+        "application_version": "538",
+        "identifier": "com.apple.mobileiphoto"
+      },
+      {
+        "application_name": "Kindle",
+        "application_version": "1158156291",
+        "identifier": "com.amazon.Lassen"
+      },
+      {
+        "application_name": "Messenger",
+        "application_version": "39433806",
+        "identifier": "com.facebook.Messenger"
+      },
+      {
+        "application_name": "Nest",
+        "application_version": "5.7.2.1",
+        "identifier": "com.nestlabs.jasper.release"
+      },
+      {
+        "application_name": "Netflix",
+        "application_version": "696",
+        "identifier": "com.netflix.Netflix"
+      },
+      {
+        "application_name": "Pinterest",
+        "application_version": "2",
+        "identifier": "pinterest"
+      },
+      {
+        "application_name": "Shazam",
+        "application_version": "1550",
+        "identifier": "com.shazam.Shazam"
+      },
+      {
+        "application_name": "Sonos",
+        "application_version": "33.15.33090",
+        "identifier": "com.sonos.SonosController"
+      },
+      {
+        "application_name": "Twitter",
+        "application_version": "6.63",
+        "identifier": "com.atebits.Tweetie2"
+      },
+      {
+        "application_name": "Uber",
+        "application_version": "2.154.1",
+        "identifier": "com.ubercab.UberClient"
+      },
+      {
+        "application_name": "Yelp",
+        "application_version": "10.27.2.13403",
+        "identifier": "com.yelp.yelpiphone"
+      }
+    ],
+    "security": {
+      "data_protection": true,
+      "block_level_encryption_capable": true,
+      "file_level_encryption_capable": true,
+      "passcode_present": true,
+      "passcode_compliant": true,
+      "passcode_compliant_with_profile": true,
+      "hardware_encryption": 3,
+      "activation_lock_enabled": true,
+      "jailbreak_detected": "Unknown"
+    },
+    "network": {
+      "home_carrier_network": "AT&T",
+      "cellular_technology": "Unknown",
+      "voice_roaming_enabled": "No",
+      "imei": "82 581035 458725 3",
+      "iccid": "6572 5971 5623 6433 3999",
+      "meid": "46982735098154",
+      "current_carrier_network": "AT&T",
+      "carrier_settings_version": "25.0",
+      "current_mobile_country_code": "310",
+      "current_mobile_network_code": "410",
+      "home_mobile_country_code": "310",
+      "home_mobile_network_code": "410",
+      "data_roaming_enabled": true,
+      "roaming": false,
+      "phone_number": "+11235551234"
+    },
+    "certificates": [
+      {
+        "common_name": "0AFC6647-140D-41CA-868F-7E0A78F7C9D2",
+        "identity": true
+      },
+      {
+        "common_name": "Demo Company JSS Built-in Certificate Authority",
+        "identity": false
+      }
+    ],
+    "configuration_profiles": [
+      {
+        "display_name": "CA Certificate",
+        "version": "1",
+        "identifier": "76BDFBAE-A0CB-4960-B0A9-11639A1A5EFC",
+        "uuid": "ADD312CB-42A3-4A3B-A6FF-A3072537A376"
+      },
+      {
+        "display_name": "MDM Profile",
+        "version": "1",
+        "identifier": "com.jamfsoftware.encrypted-profile-service",
+        "uuid": "CA1472B4-3F80-46D7-AB94-283AC72E7EC7"
+      }
+    ],
+    "provisioning_profiles": [
+
+    ],
+    "mobile_device_groups": [
+      {
+        "id": 20,
+        "name": "All Managed iPhones"
+      }
+    ],
+    "extension_attributes": [
+      {
+        "id": 1,
+        "name": "Secondary Status",
+        "type": "String",
+        "value": ""
+      }
+    ]
+  }
+}
