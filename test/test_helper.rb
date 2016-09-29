@@ -7,4 +7,5 @@ require "jess"
 # Load everything else from test/support
 Dir[File.expand_path("../support/**/*.rb", __FILE__)].each { |rb| require(rb) }
 
+require "webmock/minitest"
 require "minitest/autorun"

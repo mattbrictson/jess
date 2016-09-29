@@ -14,10 +14,10 @@ module Jess
 
         log_request(req)
         response = super
-        log_response(response)
+        log_response(response, req.uri)
         response
       rescue Error => e
-        logger.error(e.to_s)
+        logger.error(e.to_s) if logger
         raise
       end
 
@@ -29,13 +29,22 @@ module Jess
         logger.debug { "#{req.method} #{req.uri}" }
       end
 
-      def log_response(response)
+      def log_response(response, uri)
         logger.debug do
-          content_type = response.content_type
-          msg = "Received #{response.body.length} bytes "
-          msg << "(#{content_type}) " if content_type
-          msg << "from #{response.uri}"
+          "Received #{response_desc(response)} from #{uri}"
         end
+      end
+
+      def response_desc(response)
+        content_type = response.content_type
+        desc = ""
+        desc << if response.body && response.body.length
+                  "#{response.body.length} bytes"
+                else
+                  "response"
+                end
+        desc << " (#{content_type})" if content_type
+        desc
       end
     end
   end

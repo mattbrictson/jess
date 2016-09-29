@@ -30,4 +30,5 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "minitest-reporters", "~>1.1"
   spec.add_development_dependency "rubocop", "~> 0.43"
+  spec.add_development_dependency "webmock", "~> 2.1"
 end
