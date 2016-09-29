@@ -108,6 +108,26 @@ class Jess::HttpClientTest < Minitest::Test
     end
   end
 
+  def test_applies_net_http_options
+    client = Jess::HttpClient.new(
+      "https://host",
+      username: "user",
+      password: "secret",
+      net_http_options: {
+        keep_alive_timeout: 7,
+        open_timeout: 13,
+        read_timeout: 19,
+        verify_mode: OpenSSL::SSL::VERIFY_NONE
+      }
+    )
+    http = client.send(:http)
+
+    assert_equal(7, http.keep_alive_timeout)
+    assert_equal(13, http.open_timeout)
+    assert_equal(19, http.read_timeout)
+    assert_equal(OpenSSL::SSL::VERIFY_NONE, http.verify_mode)
+  end
+
   private
 
   def new_client(url="https://host", logger: nil)

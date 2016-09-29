@@ -87,4 +87,8 @@ class Jess::MobileDeviceTest < Minitest::Test
     attrs = @dev.extension_attributes
     assert_equal("", attrs["Secondary Status"])
   end
+
+  def test_inspect_shows_only_id_and_name
+    assert_equal("Jess::MobileDevice<#656, Demo iPhone 6>", @dev.inspect)
+  end
 end

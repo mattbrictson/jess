@@ -97,4 +97,8 @@ class Jess::ComputerTest < Minitest::Test
     attrs = @computer.extension_attributes
     assert_equal("demo@example.com", attrs["[1] Contact Address"])
   end
+
+  def test_inspect_shows_only_id_and_name
+    assert_equal("Jess::Computer<#4123, Demo Computer>", @computer.inspect)
+  end
 end

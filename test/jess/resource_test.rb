@@ -47,4 +47,15 @@ class Jess::ResourceTest < Minitest::Test
   def test_unknown_attribute_raises_no_method_error
     assert_raises(NoMethodError) { @rsrc.unknown_attr }
   end
+
+  def test_respond_to_reflects_json_attribute_names
+    assert(@rsrc.respond_to?(:first_name))
+    assert(@rsrc.respond_to?(:rank))
+    assert(@rsrc.respond_to?(:bio))
+    assert(@rsrc.respond_to?(:notification))
+    assert(@rsrc.respond_to?(:aliases))
+
+    refute(@rsrc.respond_to?(:firstname))
+    refute(@rsrc.respond_to?(:unknown_attr))
+  end
 end
