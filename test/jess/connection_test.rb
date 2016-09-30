@@ -19,4 +19,9 @@ class Jess::ConnectionTest < Minitest::Test
     assert_same(devs, @conn.mobile_devices)
     assert_same(@http, devs.http_client)
   end
+
+  def test_inspect_includes_http_client_info
+    @http.define_singleton_method(:inspect) { "http" }
+    assert_equal("Jess::Connection<http>", @conn.inspect)
+  end
 end

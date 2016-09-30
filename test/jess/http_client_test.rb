@@ -51,6 +51,21 @@ class Jess::HttpClientTest < Minitest::Test
     )
   end
 
+  def test_logs_empty_request
+    logger = FakeLogger.new
+    client = new_client(logger: logger)
+    stub_http_get("https://host/JSSResource/test")
+    client.get("test")
+
+    assert_equal(
+      [
+        "D: GET https://host/JSSResource/test",
+        "D: Received response from https://host/JSSResource/test"
+      ],
+      logger.messages
+    )
+  end
+
   def test_logs_error
     logger = FakeLogger.new
     client = new_client(logger: logger)
@@ -108,6 +123,33 @@ class Jess::HttpClientTest < Minitest::Test
     end
   end
 
+  def test_raises_connection_error_when_timeout
+    client = new_client
+    stub_http_get("https://host/JSSResource/test").to_timeout
+
+    assert_raises(Jess::HttpClient::ConnectionError) do
+      client.get("test")
+    end
+  end
+
+  def test_raises_connection_error_when_io_error
+    client = new_client
+    stub_http_get("https://host/JSSResource/test").to_raise(IOError)
+
+    assert_raises(Jess::HttpClient::ConnectionError) do
+      client.get("test")
+    end
+  end
+
+  def test_raises_error_when_other_error
+    client = new_client
+    stub_http_get("https://host/JSSResource/test").to_raise(StandardError)
+
+    assert_raises(Jess::HttpClient::Error) do
+      client.get("test")
+    end
+  end
+
   def test_applies_net_http_options
     client = Jess::HttpClient.new(
       "https://host",
@@ -126,6 +168,14 @@ class Jess::HttpClientTest < Minitest::Test
     assert_equal(13, http.open_timeout)
     assert_equal(19, http.read_timeout)
     assert_equal(OpenSSL::SSL::VERIFY_NONE, http.verify_mode)
+  end
+
+  def test_inspect_shows_username_and_url
+    client = new_client
+    assert_equal(
+      "Jess::HttpClient<https://demo_user@host/JSSResource/>",
+      client.inspect
+    )
   end
 
   private
