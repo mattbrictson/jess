@@ -3,7 +3,7 @@
 [![Gem Version](https://badge.fury.io/rb/jess.svg)](http://badge.fury.io/rb/jess)
 [![Build Status](https://travis-ci.org/mattbrictson/jess.svg?branch=master)](https://travis-ci.org/mattbrictson/jess)
 [![Code Climate](https://codeclimate.com/github/mattbrictson/jess/badges/gpa.svg)](https://codeclimate.com/github/mattbrictson/jess)
-[![Coverage Status](https://coveralls.io/repos/mattbrictson/jess/badge.svg?branch=master)](https://coveralls.io/r/mattbrictson/jess?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/mattbrictson/jess/badge.svg?branch=master)](https://coveralls.io/github/mattbrictson/jess?branch=master)
 
 **Jess is an extremely lightweight, read-only client for the JAMF Software Server (JSS) API.**
 This is a young project and is experimental. Currently it only provides access to computer and mobile device records.
