@@ -8,7 +8,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 
 * Your contribution here!
 
-## 0.1.0 (TBD)
+## 0.1.0 (2016-10-03)
 
 * Initial release
 
