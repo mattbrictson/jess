@@ -91,10 +91,27 @@ If you ever need access to the raw JSON data of any object, use the `_json` meth
 computer.extension_attributes._json # => [{ ... }]
 ```
 
+## Gotchas
+
+Beware of these gotchas due to limitations of the JSS JSON API.
+
+### Timestamps
+
 Jess does not perform any type conversions. For example, timestamps are provided exactly as returned in the original JSON; they are not converted to Ruby DateTime objects.
 
 ```ruby
-computer.purchasing.po_date_utc # => "2016-03-18T00:00:00.000-0500"
+computer.purchasing.po_date_utc   # => "2016-03-18T00:00:00.000-0500"
+computer.purchasing.po_date_epoch # => 1399698000000
+```
+
+### Unspecified values
+
+JSS does a poor job of indicating unspecified values. For example, a computer where the bus speed cannot be determined will return `0` rather that `null` for the `bus_speed` JSON value. Likewise, unspecified string values are `""`, and unspecified timestamps are `""` or `0` instead of `null`. Jess passes these values straight through without any interpretation, so be aware that just because an attribute is *truthy* does not mean it has a useful value.
+
+```ruby
+# A computer without warranty information
+computer.purchasing.warranty_expires       # => ""
+computer.purchasing.warranty_expires_epoch # => 0
 ```
 
 ## Why not ruby-jss?
