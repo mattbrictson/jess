@@ -25,6 +25,7 @@ module Jess
         raise Error, res.message
       end
 
+      # rubocop:disable Lint/EmptyWhen
       def handle_exception(e, req)
         case e
         when IOError, Timeout::Error
@@ -39,6 +40,7 @@ module Jess
         e.http_method = req.method
         raise e
       end
+      # rubocop:enable Lint/EmptyWhen
     end
   end
 end
