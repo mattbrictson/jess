@@ -7,7 +7,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
-* Fixed a `method_missing` bug in `ExtensionAttributes` that caused problems with `awesome_print`
+* Improved support for using jess in irb with `awesome_print` by implementing `to_hash` on resources
 
 ## 0.1.0 (2016-10-03)
 

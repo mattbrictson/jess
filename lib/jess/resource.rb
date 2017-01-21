@@ -11,6 +11,10 @@ module Jess
       @_json = json.freeze
     end
 
+    def to_hash
+      _json
+    end
+
     private
 
     def method_missing(symbol, *args)
