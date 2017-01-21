@@ -7,6 +7,9 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+
+## [0.2.0][] (2017-01-21)
+
 * Improved support for using jess in irb with `awesome_print` by implementing `to_hash` on resources
 
 ## 0.1.0 (2016-10-03)
@@ -14,4 +17,5 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 * Initial release
 
 [Semver]: http://semver.org
-[Unreleased]: https://github.com/mattbrictson/chandler/compare/v0.1.0...HEAD
+[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.2.0...HEAD
+[0.2.0]: https://github.com/mattbrictson/jess/compare/v0.1.0...v0.2.0
