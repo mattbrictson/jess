@@ -15,4 +15,16 @@ class Jess::MobileDevicesTest < Minitest::Test
 
     http.verify
   end
+
+  def test_all_ids
+    response = json_fixture("mobile_devices", raw: true)
+    http = Minitest::Mock.new
+    http.expect(:get, response, ["mobiledevices"])
+
+    devices = Jess::MobileDevices.new(http)
+    ids = devices.all_ids
+    assert_equal([650, 576, 591], ids)
+
+    http.verify
+  end
 end

@@ -14,5 +14,11 @@ module Jess
       json = JSON.parse(http_client.get("mobiledevices/id/#{id}"))
       MobileDevice.new(json.fetch("mobile_device"))
     end
+
+    # Get all mobile device IDs.
+    def all_ids
+      json = JSON.parse(http_client.get("mobiledevices"))
+      json["mobile_devices"].map { |c| c["id"] }
+    end
   end
 end

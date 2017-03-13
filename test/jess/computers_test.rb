@@ -15,4 +15,16 @@ class Jess::ComputersTest < Minitest::Test
 
     http.verify
   end
+
+  def test_all_ids
+    response = json_fixture("computers", raw: true)
+    http = Minitest::Mock.new
+    http.expect(:get, response, ["computers"])
+
+    computers = Jess::Computers.new(http)
+    ids = computers.all_ids
+    assert_equal([2486, 4155, 1235], ids)
+
+    http.verify
+  end
 end

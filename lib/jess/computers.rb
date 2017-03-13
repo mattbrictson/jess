@@ -14,5 +14,11 @@ module Jess
       json = JSON.parse(http_client.get("computers/id/#{id}"))
       Computer.new(json.fetch("computer"))
     end
+
+    # Get all computer IDs.
+    def all_ids
+      json = JSON.parse(http_client.get("computers"))
+      json["computers"].map { |c| c["id"] }
+    end
   end
 end

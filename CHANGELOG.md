@@ -6,6 +6,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 
 ## [Unreleased][]
 
+* Add `computers.all_ids` and `mobile_devices.all_ids`
 * Your contribution here!
 
 ## [0.2.0][] (2017-01-21)

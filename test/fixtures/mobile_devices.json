@@ -1,0 +1,52 @@
+{
+  "mobile_devices": [
+    {
+      "id": 650,
+      "name": "device-01",
+      "device_name": "device-01",
+      "udid": "e69b160eed3794a54dacf33829e6388ae4abb686",
+      "serial_number": "4A761C1B8FFB",
+      "phone_number": "",
+      "wifi_mac_address": "97:F7:45:58:A0:2B",
+      "managed": true,
+      "supervised": false,
+      "model": "iPhone 6 Plus",
+      "model_identifier": "iPhone7,1",
+      "modelDisplay": "iPhone 6 Plus",
+      "model_display": "iPhone 6 Plus",
+      "username": "john"
+    },
+    {
+      "id": 576,
+      "name": "iPad-02",
+      "device_name": "iPad-02",
+      "udid": "804a03e148c3ebe58d14926789cda71a1b78d8c5",
+      "serial_number": "6CE6DACA6C5B",
+      "phone_number": "",
+      "wifi_mac_address": "11:F3:E9:0A:99:62",
+      "managed": true,
+      "supervised": false,
+      "model": "iPad 3rd Generation (GSM)",
+      "model_identifier": "iPad3,3",
+      "modelDisplay": "iPad 3rd Generation (GSM)",
+      "model_display": "iPad 3rd Generation (GSM)",
+      "username": "sally"
+    },
+    {
+      "id": 591,
+      "name": "iPad-13",
+      "device_name": "iPad-13",
+      "udid": "7da779ff407dc321a0e72dd250183cea423ce846",
+      "serial_number": "8DC0F157892B",
+      "phone_number": "",
+      "wifi_mac_address": "9D:D3:A4:41:0F:CC",
+      "managed": true,
+      "supervised": false,
+      "model": "iPad 4th Generation (CDMA)",
+      "model_identifier": "iPad3,5",
+      "modelDisplay": "iPad 4th Generation (CDMA)",
+      "model_display": "iPad 4th Generation (CDMA)",
+      "username": "jenny"
+    }
+  ]
+}

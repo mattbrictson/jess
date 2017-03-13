@@ -1,0 +1,16 @@
+{
+  "computers": [
+    {
+      "id": 2486,
+      "name": "Office iMac"
+    },
+    {
+      "id": 4155,
+      "name": "Jim's MacBook Air"
+    },
+    {
+      "id": 1235,
+      "name": "Samantha's Mac Pro"
+    }
+  ]
+}
