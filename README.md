@@ -88,7 +88,7 @@ computer.extension_attributes["My Ext Attr Name"]      # => "value"
 If you ever need access to the raw JSON data of any object, use the `_json` method:
 
 ```ruby
-computer.extension_attributes._json # => [{ ... }]
+computer._json["extension_attributes"] # => [{ ... }]
 ```
 
 ## Gotchas
