@@ -6,8 +6,11 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 
 ## [Unreleased][]
 
-* Add `computers.all_ids` and `mobile_devices.all_ids`
 * Your contribution here!
+
+## [0.3.0][] (2017-03-17)
+
+* Add `computers.all_ids` and `mobile_devices.all_ids`
 
 ## [0.2.0][] (2017-01-21)
 
@@ -18,5 +21,6 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 * Initial release
 
 [Semver]: http://semver.org
-[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.2.0...HEAD
+[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.3.0...HEAD
+[0.3.0]: https://github.com/mattbrictson/jess/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mattbrictson/jess/compare/v0.1.0...v0.2.0
