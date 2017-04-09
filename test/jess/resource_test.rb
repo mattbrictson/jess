@@ -35,7 +35,7 @@ class Jess::ResourceTest < Minitest::Test
   end
 
   def test_array_of_strings
-    assert_equal(%w(Matthew M), @rsrc.aliases)
+    assert_equal(%w[Matthew M], @rsrc.aliases)
   end
 
   def test_nested_resource

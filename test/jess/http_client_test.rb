@@ -191,7 +191,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def stub_http_get(url)
     stub_request(:get, url).with(
-      basic_auth: %w(demo_user demo_password),
+      basic_auth: %w[demo_user demo_password],
       headers: {
         "Accept" => "application/json",
         "Accept-Encoding" => "gzip;q=1.0,deflate;q=0.6,identity;q=0.3",
