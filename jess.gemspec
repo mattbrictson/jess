@@ -28,10 +28,10 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "chandler", "~> 0.3"
   spec.add_development_dependency "coveralls", "~> 0.8.15"
-  spec.add_development_dependency "rake", "~> 11.0"
+  spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "minitest-reporters", "~>1.1"
-  spec.add_development_dependency "rainbow", "~> 2.1.0"
+  spec.add_development_dependency "rainbow", "~> 2.2"
   spec.add_development_dependency "rubocop", "~> 0.43"
   spec.add_development_dependency "webmock", "~> 2.1"
 end
