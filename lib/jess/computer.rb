@@ -9,7 +9,7 @@ module Jess
     def_delegators :general, :id, :name
 
     def extension_attributes
-      @ext_attrs ||= ExtensionAttributes.new(super)
+      @ext_attrs ||= ExtensionAttributes.new(_json["extension_attributes"])
     end
 
     def inspect
