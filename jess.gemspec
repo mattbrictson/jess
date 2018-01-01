@@ -1,5 +1,3 @@
-# coding: utf-8
-
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require "jess/version"
@@ -28,9 +26,9 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "chandler", "~> 0.3"
   spec.add_development_dependency "coveralls", "~> 0.8.15"
-  spec.add_development_dependency "rake", "~> 12.0"
   spec.add_development_dependency "minitest", "~> 5.0"
   spec.add_development_dependency "minitest-reporters", "~>1.1"
-  spec.add_development_dependency "rubocop", "0.48.1"
+  spec.add_development_dependency "rake", "~> 12.0"
+  spec.add_development_dependency "rubocop", "0.52.1"
   spec.add_development_dependency "webmock", "~> 3.1"
 end

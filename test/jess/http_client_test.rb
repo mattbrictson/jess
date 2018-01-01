@@ -74,7 +74,7 @@ class Jess::HttpClientTest < Minitest::Test
 
     begin
       client.get("test")
-    rescue
+    rescue StandardError
       nil
     end
 
