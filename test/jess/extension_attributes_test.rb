@@ -4,8 +4,8 @@ class Jess::ExtensionAttributesTest < Minitest::Test
   include JSONFixtures
 
   def setup
-    computer = Jess::Computer.new(json_fixture("computer_4123")["computer"])
-    @attrs = computer.extension_attributes
+    @computer = Jess::Computer.new(json_fixture("computer_4123")["computer"])
+    @attrs = @computer.extension_attributes
   end
 
   def test_size
@@ -51,5 +51,9 @@ class Jess::ExtensionAttributesTest < Minitest::Test
   def test_to_h
     assert_instance_of(Hash, @attrs.to_h)
     assert_equal(@attrs.keys, @attrs.to_h.keys)
+  end
+
+  def test_raw_json_access
+    assert_equal(@computer._json["extension_attributes"], @attrs._json)
   end
 end

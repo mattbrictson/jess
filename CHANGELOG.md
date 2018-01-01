@@ -7,6 +7,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+* `extension_attributes` now responds to `_json` like other objects
 
 ## [0.3.0][] (2017-03-17)
 
