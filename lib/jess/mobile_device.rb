@@ -15,5 +15,6 @@ module Jess
     def inspect
       "Jess::MobileDevice<##{id}, #{name}>"
     end
+    alias to_s inspect
   end
 end

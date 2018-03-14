@@ -7,6 +7,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+* `to_s` now produces the same output as `inspect` for `Computer` and `MobileDevice`
 
 ## [0.4.0][] (2018-01-03)
 
