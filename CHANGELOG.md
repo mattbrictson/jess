@@ -7,6 +7,9 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+
+## [0.5.0][] (2018-03-18)
+
 * `to_s` now produces the same output as `inspect` for `Computer` and `MobileDevice`
 
 ## [0.4.0][] (2018-01-03)
@@ -26,7 +29,8 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 * Initial release
 
 [Semver]: http://semver.org
-[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.4.0...HEAD
+[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.5.0...HEAD
+[0.5.0]: https://github.com/mattbrictson/jess/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/mattbrictson/jess/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mattbrictson/jess/compare/v0.2.0...v0.3.0
 [0.2.0]: https://github.com/mattbrictson/jess/compare/v0.1.0...v0.2.0
