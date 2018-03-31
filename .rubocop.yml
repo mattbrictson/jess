@@ -23,6 +23,9 @@ Metrics/MethodLength:
   Exclude:
     - "test/**/*"
 
+Naming/MemoizedInstanceVariableName:
+  Enabled: false
+
 Style/BarePercentLiterals:
   EnforcedStyle: percent_q
 
