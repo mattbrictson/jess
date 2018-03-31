@@ -7,9 +7,17 @@ Metrics/AbcSize:
   Exclude:
     - "test/**/*"
 
+Metrics/BlockLength:
+  Exclude:
+    - "*.gemspec"
+
 Metrics/ClassLength:
   Exclude:
     - "test/**/*"
+
+Metrics/LineLength:
+  Exclude:
+    - "*.gemspec"
 
 Metrics/MethodLength:
   Exclude:
