@@ -26,19 +26,19 @@ module Jess
       end
 
       # rubocop:disable Lint/EmptyWhen
-      def handle_exception(e, req)
-        case e
+      def handle_exception(err, req)
+        case err
         when IOError, Timeout::Error
-          e = ConnectionError.new(e.message)
+          err = ConnectionError.new(err.message)
         when Error
           # pass
         else
-          e = Error.new(e.inspect)
+          err = Error.new(err.inspect)
         end
 
-        e.uri = req.uri
-        e.http_method = req.method
-        raise e
+        err.uri = req.uri
+        err.http_method = req.method
+        raise err
       end
       # rubocop:enable Lint/EmptyWhen
     end
