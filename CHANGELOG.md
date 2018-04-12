@@ -6,6 +6,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 
 ## [Unreleased][]
 
+* Log more detailed stack trace when an HTTP error occurs
 * Your contribution here!
 
 ## [0.5.0][] (2018-03-18)

@@ -17,13 +17,22 @@ module Jess
         log_response(response, req.uri)
         response
       rescue Error => e
-        logger.error(e.to_s) if logger
+        log_exception(e) if logger
         raise
       end
 
       private
 
       attr_reader :logger
+
+      def log_exception(err)
+        if err.cause
+          logger.error(err.to_s)
+          logger.error(err.cause)
+        else
+          logger.error(err)
+        end
+      end
 
       def log_request(req)
         logger.debug { "#{req.method} #{req.uri}" }
