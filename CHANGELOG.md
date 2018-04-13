@@ -8,6 +8,10 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 
 * Your contribution here!
 
+## [0.7.0][] (2018-04-13)
+
+* Roll back logging changes introduced in 0.6.0 (sorry)
+
 ## [0.6.0][] (2018-04-12)
 
 * Log more detailed stack trace when an HTTP error occurs
@@ -33,7 +37,9 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 * Initial release
 
 [Semver]: http://semver.org
-[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.5.0...HEAD
+[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.7.0...HEAD
+[0.7.0]: https://github.com/mattbrictson/jess/compare/v0.6.0...v0.7.0
+[0.6.0]: https://github.com/mattbrictson/jess/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/mattbrictson/jess/compare/v0.4.0...v0.5.0
 [0.4.0]: https://github.com/mattbrictson/jess/compare/v0.3.0...v0.4.0
 [0.3.0]: https://github.com/mattbrictson/jess/compare/v0.2.0...v0.3.0
