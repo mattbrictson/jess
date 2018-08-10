@@ -8,11 +8,11 @@ module Jess
     #
     class ErrorDecorator < SimpleDelegator
       def request(req)
-        super.tap do |response|
-          raise_if_error_code(response)
-        end
+        res = super
+        raise_if_error_code(res)
+        res
       rescue StandardError => e
-        handle_exception(e, req)
+        handle_exception(e, req, res)
       end
 
       private
@@ -26,7 +26,7 @@ module Jess
       end
 
       # rubocop:disable Lint/EmptyWhen
-      def handle_exception(err, req)
+      def handle_exception(err, req, res)
         case err
         when IOError, Timeout::Error
           err = ConnectionError.new(err.message)
@@ -36,11 +36,24 @@ module Jess
           err = Error.new(err.inspect)
         end
 
-        err.uri = req.uri
-        err.http_method = req.method
+        fill_exception(err, req, res)
         raise err
       end
       # rubocop:enable Lint/EmptyWhen
+
+      def fill_exception(err, req, res)
+        err.uri = req.uri
+        err.http_method = req.method
+        return if res.nil?
+
+        err.code = res.code
+
+        begin
+          err.response = res.body.to_s
+        rescue StandardError
+          err.response = nil
+        end
+      end
     end
   end
 end

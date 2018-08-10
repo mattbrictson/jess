@@ -7,6 +7,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+* Provide more details in the exception object when an error occurs, including the full response body
 
 ## [0.7.0][] (2018-04-13)
 

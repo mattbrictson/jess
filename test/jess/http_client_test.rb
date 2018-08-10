@@ -81,10 +81,51 @@ class Jess::HttpClientTest < Minitest::Test
     assert_equal(
       [
         "D: GET https://host/JSSResource/test",
-        "E: Not found (during GET https://host/JSSResource/test)"
+        "E: 404 Not found (during GET https://host/JSSResource/test)"
       ],
       logger.messages
     )
+  end
+
+  def test_logs_error_with_status_if_no_message_present
+    logger = FakeLogger.new
+    client = new_client(logger: logger)
+    stub_http_get("https://host/JSSResource/test")
+      .to_return(status: [503, ""])
+
+    begin
+      client.get("test")
+    rescue StandardError
+      nil
+    end
+
+    assert_equal(
+      [
+        "D: GET https://host/JSSResource/test",
+        "E: 503 (during GET https://host/JSSResource/test)"
+      ],
+      logger.messages
+    )
+  end
+
+  def test_includes_response_body_in_exception
+    logger = FakeLogger.new
+    client = new_client(logger: logger)
+    stub_http_get("https://host/JSSResource/test")
+      .to_return(body: "Oh no!", status: [500, "Internal Server Error"])
+
+    exception = nil
+
+    begin
+      client.get("test")
+    rescue StandardError => e
+      exception = e
+    end
+
+    refute_nil(exception)
+    assert_equal("500", exception.code)
+    assert_match(/Internal Server Error/, exception.message)
+    assert_equal("Oh no!", exception.response)
   end
 
   def test_raises_not_found_when_404

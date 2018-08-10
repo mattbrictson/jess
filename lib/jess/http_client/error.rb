@@ -5,10 +5,11 @@ module Jess
     # being attempted when the error occurred.
     #
     class Error < StandardError
-      attr_accessor :uri, :http_method
+      attr_accessor :uri, :http_method, :code, :response
 
       def to_s
-        "#{super} (during #{http_method.to_s.upcase} #{uri})"
+        message = [code, super].join(" ").strip
+        "#{message} (during #{http_method.to_s.upcase} #{uri})"
       end
     end
 
