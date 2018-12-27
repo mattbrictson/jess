@@ -22,6 +22,7 @@ module Jess
         raise BadCredentials, res.message if res.code == "401"
         raise NotFound, res.message if res.code == "404"
         raise ServerError, res.message if res.is_a?(Net::HTTPServerError)
+
         raise Error, res.message
       end
 
