@@ -7,6 +7,7 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+* **Drop support for EOL Ruby versions.** Ruby >= 2.3.0 is now required.
 
 ## [0.8.0][] (2018-08-10)
 
