@@ -17,7 +17,7 @@ module Jess
         log_response(response, req.uri)
         response
       rescue Error => e
-        logger.error(e.to_s) if logger
+        logger&.error(e.to_s)
         raise
       end
 

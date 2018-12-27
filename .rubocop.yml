@@ -1,7 +1,7 @@
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
-  TargetRubyVersion: 2.1
+  TargetRubyVersion: 2.3
 
 Metrics/AbcSize:
   Exclude:
