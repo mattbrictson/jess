@@ -7,6 +7,9 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 ## [Unreleased][]
 
 * Your contribution here!
+
+## [0.9.0][] (2018-12-30)
+
 * **Drop support for EOL Ruby versions.** Ruby >= 2.3.0 is now required.
 
 ## [0.8.0][] (2018-08-10)
@@ -42,7 +45,9 @@ Jess is in a pre-1.0 state. This means that its APIs and behavior are subject to
 * Initial release
 
 [Semver]: http://semver.org
-[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.7.0...HEAD
+[Unreleased]: https://github.com/mattbrictson/jess/compare/v0.9.0...HEAD
+[0.9.0]: https://github.com/mattbrictson/jess/compare/v0.8.0...v0.9.0
+[0.8.0]: https://github.com/mattbrictson/jess/compare/v0.7.0...v0.8.0
 [0.7.0]: https://github.com/mattbrictson/jess/compare/v0.6.0...v0.7.0
 [0.6.0]: https://github.com/mattbrictson/jess/compare/v0.5.0...v0.6.0
 [0.5.0]: https://github.com/mattbrictson/jess/compare/v0.4.0...v0.5.0
