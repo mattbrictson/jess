@@ -3,6 +3,9 @@ AllCops:
   DisplayStyleGuide: true
   TargetRubyVersion: 2.3
 
+Layout/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
 Metrics/AbcSize:
   Exclude:
     - "test/**/*"
@@ -41,9 +44,6 @@ Style/DoubleNegation:
 
 Style/FrozenStringLiteralComment:
   Enabled: false
-
-Style/SpaceAroundEqualsInParameterDefault:
-  EnforcedStyle: no_space
 
 Style/StringLiterals:
   EnforcedStyle: double_quotes
