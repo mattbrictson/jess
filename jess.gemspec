@@ -30,7 +30,7 @@ Gem::Specification.new do |spec|
   spec.required_ruby_version = ">= 2.3.0"
 
   spec.add_development_dependency "awesome_print", "~> 1.7"
-  spec.add_development_dependency "bundler", "~> 1.13"
+  spec.add_development_dependency "bundler", "~> 2.0"
   spec.add_development_dependency "chandler", "~> 0.3"
   spec.add_development_dependency "coveralls", "~> 0.8.15"
   spec.add_development_dependency "minitest", "~> 5.0"
