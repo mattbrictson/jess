@@ -123,7 +123,7 @@ The [ruby-jss](http://pixaranimationstudios.github.io/ruby-jss/) gem is the most
 
 ## Who uses Jess?
 
-Jess powers [Robot Cloud Dashboard](http://www.robotcloud.net/dashboard/).
+Jess powers [Robot Cloud Vision-Bot](http://www.robotcloud.net/dashboard/).
 
 ## Development
 
