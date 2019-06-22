@@ -1,5 +1,4 @@
 require "bundler/gem_tasks"
-require "chandler/tasks"
 require "rake/testtask"
 require "rubocop/rake_task"
 
@@ -11,5 +10,4 @@ end
 
 RuboCop::RakeTask.new
 
-task "release:rubygem_push" => "chandler:push"
 task default: %i[test rubocop]
