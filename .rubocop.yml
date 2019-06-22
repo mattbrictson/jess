@@ -4,7 +4,7 @@ require:
 AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
-  TargetRubyVersion: 2.3
+  TargetRubyVersion: 2.4
 
 Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
@@ -16,6 +16,7 @@ Metrics/AbcSize:
 Metrics/BlockLength:
   Exclude:
     - "*.gemspec"
+    - "Rakefile"
 
 Metrics/ClassLength:
   Exclude:
@@ -40,6 +41,7 @@ Style/ClassAndModuleChildren:
 
 Style/Documentation:
   Exclude:
+    - "Rakefile"
     - 'test/**/*'
 
 Style/DoubleNegation:
