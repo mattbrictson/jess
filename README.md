@@ -5,7 +5,7 @@
 [![Code Climate](https://codeclimate.com/github/mattbrictson/jess/badges/gpa.svg)](https://codeclimate.com/github/mattbrictson/jess)
 
 **Jess is an extremely lightweight, read-only client for the JAMF Software Server (JSS) API.**
-This is a young project and is experimental. Currently it only provides access to computer and mobile device records.
+Currently it only provides access to computer and mobile device records.
 
 Jess aims to be:
 
