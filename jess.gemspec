@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
 
   spec.metadata      = {
     "homepage_uri" => "https://github.com/mattbrictson/jess",
-    "changelog_uri" => "https://github.com/mattbrictson/jess/blob/master/CHANGELOG.md",
+    "changelog_uri" => "https://github.com/mattbrictson/jess/releases",
     "source_code_uri" => "https://github.com/mattbrictson/jess/",
     "bug_tracker_uri" => "https://github.com/mattbrictson/jess/issues"
   }
