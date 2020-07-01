@@ -36,6 +36,6 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 13.0"
   spec.add_development_dependency "rexml", "~> 3.2"
   spec.add_development_dependency "rubocop", "= 0.82.0"
-  spec.add_development_dependency "rubocop-performance", "= 1.5.2"
+  spec.add_development_dependency "rubocop-performance", "= 1.6.1"
   spec.add_development_dependency "webmock", "~> 3.1"
 end
