@@ -26,7 +26,6 @@ module Jess
         raise Error, res.message
       end
 
-      # rubocop:disable Lint/EmptyWhen
       def handle_exception(err, req, res)
         case err
         when IOError, Timeout::Error
@@ -40,7 +39,6 @@ module Jess
         fill_exception(err, req, res)
         raise err
       end
-      # rubocop:enable Lint/EmptyWhen
 
       def fill_exception(err, req, res)
         err.uri = req.uri
