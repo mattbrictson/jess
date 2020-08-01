@@ -30,7 +30,7 @@ namespace :bump do
     lowest = RubyVersions.lowest_supported
     lowest_minor = RubyVersions.lowest_supported_minor
 
-    replace_in_file "jess.gemspec", /ruby_version =.* ">= (.*)"/ => lowest
+    replace_in_file "jess.gemspec", /ruby_version = .*">= (.*)"/ => lowest
     replace_in_file ".rubocop.yml", /TargetRubyVersion: (.*)/ => lowest_minor
     replace_in_file "README.md", /requires Ruby (\d\.\d)/i => lowest_minor
 
@@ -52,6 +52,8 @@ def replace_in_file(path, replacements)
   contents = IO.read(path)
   orig_contents = contents.dup
   replacements.each do |regexp, text|
+    raise "Can't find #{regexp} in #{path}" unless regexp.match?(contents)
+
     contents.gsub!(regexp) do |match|
       match[regexp, 1] = text
       match
