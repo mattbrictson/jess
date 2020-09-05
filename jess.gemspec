@@ -18,7 +18,8 @@ Gem::Specification.new do |spec|
     "bug_tracker_uri" => "https://github.com/mattbrictson/jess/issues"
   }
 
-  spec.files = `git ls-files -z lib README.md`.split("\x0")
+  # Specify which files should be added to the gem when it is released.
+  spec.files = Dir.glob(%w[LICENSE.txt README.md {exe,lib}/**/*]).reject { |f| File.directory?(f) }
   spec.bindir = "exe"
   spec.executables = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
