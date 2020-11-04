@@ -56,14 +56,14 @@ class Jess::MobileDeviceTest < Minitest::Test
   def test_security_attributes
     sec = @dev.security
     refute_nil(sec)
-    assert_equal(true, sec.data_protection)
-    assert_equal(true, sec.block_level_encryption_capable)
-    assert_equal(true, sec.file_level_encryption_capable)
-    assert_equal(true, sec.passcode_present)
-    assert_equal(true, sec.passcode_compliant)
-    assert_equal(true, sec.passcode_compliant_with_profile)
+    assert(sec.data_protection)
+    assert(sec.block_level_encryption_capable)
+    assert(sec.file_level_encryption_capable)
+    assert(sec.passcode_present)
+    assert(sec.passcode_compliant)
+    assert(sec.passcode_compliant_with_profile)
     assert_equal(3, sec.hardware_encryption)
-    assert_equal(true, sec.activation_lock_enabled)
+    assert(sec.activation_lock_enabled)
     assert_equal("Unknown", sec.jailbreak_detected)
   end
 

@@ -41,7 +41,7 @@ class Jess::ResourceTest < Minitest::Test
   def test_nested_resource
     nested = @rsrc.notification
     assert_instance_of(Jess::Resource, nested)
-    assert_equal(true, nested.enabled)
+    assert(nested.enabled)
     assert_equal("matt@example.com", nested.email)
   end
 
@@ -50,13 +50,13 @@ class Jess::ResourceTest < Minitest::Test
   end
 
   def test_respond_to_reflects_json_attribute_names
-    assert(@rsrc.respond_to?(:first_name))
-    assert(@rsrc.respond_to?(:rank))
-    assert(@rsrc.respond_to?(:bio))
-    assert(@rsrc.respond_to?(:notification))
-    assert(@rsrc.respond_to?(:aliases))
+    assert_respond_to(@rsrc, :first_name)
+    assert_respond_to(@rsrc, :rank)
+    assert_respond_to(@rsrc, :bio)
+    assert_respond_to(@rsrc, :notification)
+    assert_respond_to(@rsrc, :aliases)
 
-    refute(@rsrc.respond_to?(:firstname))
-    refute(@rsrc.respond_to?(:unknown_attr))
+    refute_respond_to(@rsrc, :firstname)
+    refute_respond_to(@rsrc, :unknown_attr)
   end
 end
