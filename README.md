@@ -1,7 +1,7 @@
 # Jess
 
 [![Gem Version](https://badge.fury.io/rb/jess.svg)](http://badge.fury.io/rb/jess)
-[![Build Status](https://travis-ci.org/mattbrictson/jess.svg?branch=main)](https://travis-ci.org/mattbrictson/jess)
+[![Build Status](https://api.travis-ci.com/mattbrictson/jess.svg?branch=main)](https://travis-ci.com/github/mattbrictson/jess)
 [![Code Climate](https://codeclimate.com/github/mattbrictson/jess/badges/gpa.svg)](https://codeclimate.com/github/mattbrictson/jess)
 
 **Jess is an extremely lightweight, read-only client for the JAMF Software Server (JSS) API.**
