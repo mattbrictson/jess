@@ -35,6 +35,9 @@ Minitest/MultipleAssertions:
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
+Naming/VariableNumber:
+  Enabled: false
+
 Style/BarePercentLiterals:
   EnforcedStyle: percent_q
 
