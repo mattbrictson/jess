@@ -34,7 +34,7 @@ module Jess
       when Hash
         Resource.new(json)
       when Array
-        json.map(&method(:_as_resource)).freeze
+        json.map { |j| _as_resource(j) }.freeze
       else
         json.freeze
       end
