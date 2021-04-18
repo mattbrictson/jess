@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.summary = "Lightweight, unofficial client for the JAMF Software Server (JSS) API"
   spec.homepage = "https://github.com/mattbrictson/jess"
   spec.license = "MIT"
-  spec.required_ruby_version = Gem::Requirement.new(">= 2.5.0")
+  spec.required_ruby_version = Gem::Requirement.new(">= 2.6.0")
 
   spec.metadata = {
     "homepage_uri" => spec.homepage,
