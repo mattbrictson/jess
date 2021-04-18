@@ -8,7 +8,7 @@ AllCops:
   DisplayCopNames: true
   DisplayStyleGuide: true
   NewCops: enable
-  TargetRubyVersion: 2.5
+  TargetRubyVersion: 2.6
 
 Layout/SpaceAroundEqualsInParameterDefault:
   EnforcedStyle: no_space
