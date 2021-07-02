@@ -44,8 +44,7 @@ class Jess::HttpClientTest < Minitest::Test
     assert_equal(
       [
         "D: GET https://host/JSSResource/test",
-        "D: Received 21 bytes (application/json) "\
-          "from https://host/JSSResource/test"
+        "D: Received 21 bytes (application/json) from https://host/JSSResource/test"
       ],
       logger.messages
     )
