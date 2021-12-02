@@ -15,7 +15,8 @@ Gem::Specification.new do |spec|
     "homepage_uri" => spec.homepage,
     "changelog_uri" => "https://github.com/mattbrictson/jess/releases",
     "source_code_uri" => "https://github.com/mattbrictson/jess/",
-    "bug_tracker_uri" => "https://github.com/mattbrictson/jess/issues"
+    "bug_tracker_uri" => "https://github.com/mattbrictson/jess/issues",
+    "rubygems_mfa_required" => "true"
   }
 
   # Specify which files should be added to the gem when it is released.
