@@ -11,14 +11,14 @@ require "jess/version"
 # computer.hardware.model # => "iMac Intel (Retina 5k, 27-Inch, Late 2015)"
 #
 module Jess
-  autoload "Computer", "jess/computer"
-  autoload "Computers", "jess/computers"
-  autoload "Connection", "jess/connection"
-  autoload "ExtensionAttributes", "jess/extension_attributes"
-  autoload "HttpClient", "jess/http_client"
-  autoload "MobileDevice", "jess/mobile_device"
-  autoload "MobileDevices", "jess/mobile_devices"
-  autoload "Resource", "jess/resource"
+  autoload :Computer, "jess/computer"
+  autoload :Computers, "jess/computers"
+  autoload :Connection, "jess/connection"
+  autoload :ExtensionAttributes, "jess/extension_attributes"
+  autoload :HttpClient, "jess/http_client"
+  autoload :MobileDevice, "jess/mobile_device"
+  autoload :MobileDevices, "jess/mobile_devices"
+  autoload :Resource, "jess/resource"
 
   # Establish a connection with JSS and return a Jess::Connection object that
   # can be used to interact with the JSS API. This is a convenience method. For
