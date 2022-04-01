@@ -23,7 +23,7 @@ class Jess::ResourceTest < Minitest::Test
   def test_original_json_can_be_accessed_but_is_frozen
     assert_equal(@json, @rsrc._json)
     assert_equal(@json, @rsrc.to_hash)
-    assert(@rsrc._json.frozen?)
+    assert_predicate(@rsrc._json, :frozen?)
   end
 
   def test_null
