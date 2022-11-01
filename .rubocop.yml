@@ -65,6 +65,9 @@ Metrics/MethodLength:
 Minitest/MultipleAssertions:
   Enabled: false
 
+Minitest/EmptyLineBeforeAssertionMethods:
+  Enabled: false
+
 Naming/MemoizedInstanceVariableName:
   Enabled: false
 
