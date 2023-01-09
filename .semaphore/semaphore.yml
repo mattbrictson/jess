@@ -8,7 +8,8 @@ blocks:
   - name: Ruby
     task:
       env_vars:
-        BUNDLE_PATH: vendor/bundle
+        - name: BUNDLE_PATH
+          value: vendor/bundle
       prologue:
         commands:
           - checkout
