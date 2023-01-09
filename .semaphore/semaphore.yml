@@ -7,12 +7,14 @@ agent:
 blocks:
   - name: Ruby
     task:
+      env_vars:
+        BUNDLE_PATH: vendor/bundle
       prologue:
         commands:
           - checkout
           - sem-version ruby ${RUBY:-3.2.0}
           - cache restore
-          - bundle install --deployment --path vendor/bundle
+          - bundle check || bundle install
           - cache store
       jobs:
         - name: Rubocop
