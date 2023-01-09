@@ -1,0 +1,27 @@
+version: v1.0
+name: CI
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Ruby
+    task:
+      prologue:
+        commands:
+          - checkout
+          - sem-version ruby ${RUBY:-3.2}
+          - cache restore
+          - bundle install --deployment --path vendor/bundle
+          - cache store
+      jobs:
+        - name: Rubocop
+          commands:
+            - bundle exec rubocop
+        - name: Test
+          matrix:
+            - env_var: RUBY
+              values: ["2.6", "2.7", "3.0", "3.1", "3.2"]
+          commands:
+            - bundle exec rake test TESTOPTS="--ci-dir=./reports"
+            - test-results publish ./reports
