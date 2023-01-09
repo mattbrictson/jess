@@ -28,3 +28,9 @@ blocks:
           commands:
             - bundle exec rake test TESTOPTS="--ci-dir=./reports"
             - test-results publish ./reports
+after_pipeline:
+  task:
+    jobs:
+      - name: Publish Results
+        commands:
+          - test-results gen-pipeline-report
