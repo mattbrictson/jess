@@ -12,7 +12,6 @@ Have a feature idea, bug fix, or refactoring suggestion? Contributions are welco
 
 * Did you add tests? New features or changes in behavior should be tested.
 * Do all tests and RuboCop checks pass? Run `bundle exec rake` to be sure.
-* Did you add a CHANGELOG entry? All non-trivial PRs need one.
 
 ## Questions?
 
