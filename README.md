@@ -32,7 +32,7 @@ Or install it yourself as:
 
     $ gem install jess
 
-*Note that Jess requires Ruby 2.6 or newer.*
+*Note that Jess requires Ruby 3.0 or newer.*
 
 ## Usage
 
