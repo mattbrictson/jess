@@ -73,7 +73,7 @@ module Jess
 
     def apply_net_http_options(http)
       net_http_options.each do |attr, value|
-        http.public_send("#{attr}=", value)
+        http.public_send(:"#{attr}=", value)
       end
     end
   end
