@@ -26,7 +26,7 @@ module Jess
   # using the desired options, then pass it to Jess::Connection.new.
   #
   def self.connect(url, username:, password:)
-    client = HttpClient.new(url, username: username, password: password)
+    client = HttpClient.new(url, username:, password:)
     Connection.new(client)
   end
 end
