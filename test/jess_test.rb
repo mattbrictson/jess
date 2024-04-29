@@ -10,7 +10,7 @@ class JessTest < Minitest::Test
     username = "hello"
     password = "hush"
 
-    conn = Jess.connect(url, username: username, password: password)
+    conn = Jess.connect(url, username:, password:)
 
     assert_instance_of(Jess::Connection, conn)
 

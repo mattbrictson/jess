@@ -34,7 +34,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_logs_successful_request
     logger = FakeLogger.new
-    client = new_client(logger: logger)
+    client = new_client(logger:)
     stub_http_get("https://host/JSSResource/test").to_return(
       body: '{ "sample": "value" }',
       headers: { "Content-Type" => "application/json" }
@@ -52,7 +52,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_logs_empty_request
     logger = FakeLogger.new
-    client = new_client(logger: logger)
+    client = new_client(logger:)
     stub_http_get("https://host/JSSResource/test")
     client.get("test")
 
@@ -67,7 +67,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_logs_error
     logger = FakeLogger.new
-    client = new_client(logger: logger)
+    client = new_client(logger:)
     stub_http_get("https://host/JSSResource/test")
       .to_return(status: [404, "Not found"])
 
@@ -88,7 +88,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_logs_error_with_status_if_no_message_present
     logger = FakeLogger.new
-    client = new_client(logger: logger)
+    client = new_client(logger:)
     stub_http_get("https://host/JSSResource/test")
       .to_return(status: [503, ""])
 
@@ -109,7 +109,7 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_includes_response_body_in_exception
     logger = FakeLogger.new
-    client = new_client(logger: logger)
+    client = new_client(logger:)
     stub_http_get("https://host/JSSResource/test")
       .to_return(body: "Oh no!", status: [500, "Internal Server Error"])
 
@@ -225,7 +225,7 @@ class Jess::HttpClientTest < Minitest::Test
       url,
       username: "demo_user",
       password: "demo_password",
-      logger: logger
+      logger:
     )
   end
 
