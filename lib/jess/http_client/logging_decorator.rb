@@ -37,7 +37,7 @@ module Jess
 
       def response_desc(response)
         content_type = response.content_type
-        desc = ""
+        desc = +""
         desc << if response.body && response.body.length
                   "#{response.body.length} bytes"
                 else
