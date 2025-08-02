@@ -6,6 +6,7 @@ module Jess
   # security, extension attributes, etc.
   class MobileDevice < Resource
     extend Forwardable
+
     def_delegators :general, :id, :name
 
     def extension_attributes
