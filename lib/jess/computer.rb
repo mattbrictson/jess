@@ -6,6 +6,7 @@ module Jess
   # extension attributes, etc.
   class Computer < Resource
     extend Forwardable
+
     def_delegators :general, :id, :name
 
     def extension_attributes

@@ -5,6 +5,7 @@ module Jess
   # key/value access.
   class ExtensionAttributes < Resource
     extend Forwardable
+
     def_delegators :@values, :[], :fetch, :key?, :keys, :size, :length, :to_h
 
     def initialize(json)
