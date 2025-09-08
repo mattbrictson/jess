@@ -3,7 +3,6 @@
 [![Gem Version](https://img.shields.io/gem/v/jess)](https://rubygems.org/gems/jess)
 [![Gem Downloads](https://img.shields.io/gem/dt/jess)](https://www.ruby-toolbox.com/projects/jess)
 [![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/mattbrictson/jess/ci.yml)](https://github.com/mattbrictson/jess/actions/workflows/ci.yml)
-[![Code Climate maintainability](https://img.shields.io/codeclimate/maintainability/mattbrictson/jess)](https://codeclimate.com/github/mattbrictson/jess)
 
 **Jess is an extremely lightweight, read-only client for the JAMF Software Server (JSS) API.**
 Currently it only provides access to computer and mobile device records.
