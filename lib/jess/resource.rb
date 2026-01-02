@@ -17,9 +17,9 @@ module Jess
 
     private
 
-    def method_missing(symbol, *args)
+    def method_missing(symbol, *)
       if _json.key?(symbol.to_s)
-        _as_resource(_json.public_send(:[], symbol.to_s, *args))
+        _as_resource(_json.public_send(:[], symbol.to_s, *))
       else
         super
       end
