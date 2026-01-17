@@ -1,9 +1,7 @@
-require "test_helper"
-
-class Jess::MobileDeviceTest < Minitest::Test
+class Jess::MobileDeviceTest < JessTest
   include JSONFixtures
 
-  def setup
+  setup do
     @dev = Jess::MobileDevice.new(
       json_fixture("mobile_device_656")["mobile_device"]
     )

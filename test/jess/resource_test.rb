@@ -1,7 +1,5 @@
-require "test_helper"
-
-class Jess::ResourceTest < Minitest::Test
-  def setup
+class Jess::ResourceTest < JessTest
+  setup do
     @json = JSON.parse(<<-STR)
       {
         "first_name": "Matt",

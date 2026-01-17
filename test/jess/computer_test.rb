@@ -1,9 +1,7 @@
-require "test_helper"
-
-class Jess::ComputerTest < Minitest::Test
+class Jess::ComputerTest < JessTest
   include JSONFixtures
 
-  def setup
+  setup do
     @computer = Jess::Computer.new(json_fixture("computer_4123")["computer"])
   end
 
