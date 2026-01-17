@@ -1,9 +1,7 @@
-require "test_helper"
-
-class Jess::ExtensionAttributesTest < Minitest::Test
+class Jess::ExtensionAttributesTest < JessTest
   include JSONFixtures
 
-  def setup
+  setup do
     @computer = Jess::Computer.new(json_fixture("computer_4123")["computer"])
     @attrs = @computer.extension_attributes
   end

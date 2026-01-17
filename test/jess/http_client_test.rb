@@ -1,8 +1,4 @@
-require "test_helper"
-
-class Jess::HttpClientTest < Minitest::Test
-  include JSONFixtures
-
+class Jess::HttpClientTest < JessTest
   class FakeLogger
     attr_reader :messages
 
@@ -30,6 +26,8 @@ class Jess::HttpClientTest < Minitest::Test
     client = new_client("https://host/path/to/jss")
     stub_http_get("https://host/path/to/jss/JSSResource/test")
     client.get("test")
+
+    assert_requested(:get, "https://host/path/to/jss/JSSResource/test")
   end
 
   def test_logs_successful_request

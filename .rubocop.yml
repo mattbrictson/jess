@@ -1,5 +1,4 @@
 plugins:
-  - rubocop-minitest
   - rubocop-packaging
   - rubocop-performance
   - rubocop-rake
@@ -61,12 +60,6 @@ Metrics/ClassLength:
 Metrics/MethodLength:
   Exclude:
     - "test/**/*"
-
-Minitest/MultipleAssertions:
-  Enabled: false
-
-Minitest/EmptyLineBeforeAssertionMethods:
-  Enabled: false
 
 Naming/MemoizedInstanceVariableName:
   Enabled: false

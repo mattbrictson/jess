@@ -1,7 +1,5 @@
-require "test_helper"
-
-class Jess::ConnectionTest < Minitest::Test
-  def setup
+class Jess::ConnectionTest < JessTest
+  setup do
     @http = Object.new
     @conn = Jess::Connection.new(@http)
   end
