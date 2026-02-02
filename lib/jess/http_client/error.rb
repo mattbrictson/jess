@@ -14,16 +14,20 @@ module Jess
     end
 
     # Raised when Jess::HttpClient fails to open an HTTP connection.
-    ConnectionError = Class.new(Error)
+    class ConnectionError < Error
+    end
 
     # Raised when Jess::HttpClient receives a 500 error from the server.
-    ServerError = Class.new(Error)
+    class ServerError < Error
+    end
 
     # Raised when Jess::HttpClient receives a 404 error from the server.
-    NotFound = Class.new(Error)
+    class NotFound < Error
+    end
 
     # Raised when Jess::HttpClient receives a 401 error from the server, which
     # happens when the username and/or password are incorrect.
-    BadCredentials = Class.new(Error)
+    class BadCredentials < Error
+    end
   end
 end
