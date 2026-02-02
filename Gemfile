@@ -3,7 +3,7 @@ gemspec
 
 gem "amazing_print", "~> 2.0"
 gem "irb"
-gem "minitest", "~> 5.0"
+gem "minitest", "~> 6.0"
 gem "minitest-rg", "~> 5.3"
 gem "rake", "~> 13.0", "!= 13.0.2"
 gem "rexml", "~> 3.2"
