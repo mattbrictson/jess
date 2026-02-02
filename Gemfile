@@ -4,6 +4,7 @@ gemspec
 gem "amazing_print", "~> 2.0"
 gem "irb"
 gem "minitest", "~> 6.0"
+gem "minitest-mock", "~> 5.27"
 gem "minitest-rg", "~> 5.3"
 gem "rake", "~> 13.0", "!= 13.0.2"
 gem "rexml", "~> 3.2"
