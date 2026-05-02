@@ -10,8 +10,8 @@ module Jess
 
     def initialize(json)
       super
-      @values = json.each_with_object({}) do |attr, hash|
-        hash[attr["name"]] = attr["value"]
+      @values = json.to_h do |attr|
+        [attr["name"], attr["value"]]
       end
       @values.freeze
     end
