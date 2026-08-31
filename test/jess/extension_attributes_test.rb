@@ -1,6 +1,4 @@
-require "test_helper"
-
-class Jess::ExtensionAttributesTest < Minitest::Test
+class Jess::ExtensionAttributesTest < Jess::Test
   include JSONFixtures
 
   def setup

@@ -1,6 +1,4 @@
-require "test_helper"
-
-class JessTest < Minitest::Test
+class JessTest < Jess::Test
   def test_that_it_has_a_version_number
     refute_nil(::Jess::VERSION)
   end

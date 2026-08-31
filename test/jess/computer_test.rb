@@ -1,6 +1,4 @@
-require "test_helper"
-
-class Jess::ComputerTest < Minitest::Test
+class Jess::ComputerTest < Jess::Test
   include JSONFixtures
 
   def setup

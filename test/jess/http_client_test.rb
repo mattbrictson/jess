@@ -1,6 +1,4 @@
-require "test_helper"
-
-class Jess::HttpClientTest < Minitest::Test
+class Jess::HttpClientTest < Jess::Test
   include JSONFixtures
 
   class FakeLogger
@@ -28,8 +26,9 @@ class Jess::HttpClientTest < Minitest::Test
 
   def test_honors_non_root_jss_path
     client = new_client("https://host/path/to/jss")
-    stub_http_get("https://host/path/to/jss/JSSResource/test")
-    client.get("test")
+    stub_http_get("https://host/path/to/jss/JSSResource/test").to_return(body: "value")
+    result = client.get("test")
+    assert_equal("value", result)
   end
 
   def test_logs_successful_request

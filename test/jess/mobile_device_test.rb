@@ -1,6 +1,4 @@
-require "test_helper"
-
-class Jess::MobileDeviceTest < Minitest::Test
+class Jess::MobileDeviceTest < Jess::Test
   include JSONFixtures
 
   def setup
