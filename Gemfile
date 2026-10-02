@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 gemspec
 
-gem "amazing_print", "~> 2.0"
+gem "amazing_print", "~> 3.0"
 gem "irb"
 gem "megatest", "~> 0.11.0"
 gem "rake", "~> 13.0", "!= 13.0.2"
